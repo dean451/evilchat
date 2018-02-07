@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get 'pages/home'
+  root to: "chat#show"
 
-  root to: "pages#home"
+  get "/login", to: "auth#new"
+  post "/login", to: "auth#create"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
