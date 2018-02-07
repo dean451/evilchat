@@ -1,3 +1,4 @@
-import "./application.css";
+// frontend/packs/application.js
 
-document.body.insertAdjacentHTML("afterbegin", "Webpage works!");
+import "init";
+import "components/page/page";
